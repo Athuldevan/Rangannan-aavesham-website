@@ -1,0 +1,238 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* variables defining */
+:root {
+    --primary-color: #fafcfd;
+    --secondary-color: #f7f9f8;
+    --accent-color: #ffffffea;
+    --background-color: #0e0e10;
+    --font-family: "Montserrat", sans-serif;
+    --secondary-font-family: "Just Me Again Down Here", cursive;
+    --font-size-base: 16px;
+    --navbar-height: 80px;
+  }
+  /* BODY */
+  body{
+    background-color: var(--background-color);
+    font-family: var(--font-family);
+    color: var(--primary-color);
+    font-size: var(--font-size-base);
+    margin: 0;
+     padding: 0;
+     height: 100vh;
+     width: 100vw;
+     scroll-behavior: smooth;
+  }
+
+  /* NAVBAR SECTION*/
+  a {
+    color: var(--accent-color);
+    text-decoration: none;
+  }
+  
+  header {
+    padding: 1.5rem;
+    display: flex;
+    width: 100%;
+    height: var(--navbar-height);
+    justify-content: center;
+    align-items: center;
+    
+    z-index: 30;
+    background-color: var(--background-color);
+  }
+ 
+  
+  .menu {
+    list-style: none;
+    display: flex;
+    padding-inline-start: 0px;
+  }
+  
+  .menu__item {
+    padding: 0.5rem 0.75rem;
+    margin-right: 0.5rem;
+    font-size: 20px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+  .menu__item:hover{
+    transform: scale(1.09);
+  }
+  /* hero section*/
+  
+  section{
+    padding: 0 60px;
+  }
+  main{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    z-index: 20;
+    margin-bottom: var(--navbar-height);
+  }
+  .hero{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    min-height: 100vh;
+    font-family: var(--secondary-font-family);
+    
+  }
+  .hero-image{
+    min-width: 40%;
+    margin-right: 80px;
+    object-fit: cover;
+  }
+  .hero-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  h1{
+    margin: 0;
+    color: var(--secondary-color);
+
+    
+  }
+  
+  .hero-content-title{
+    font-size: 8rem;
+    letter-spacing: 2rem;
+    margin-bottom: 25px;
+    font-weight: bold;
+    transition:letter-spacing 0.2s ease;
+   
+  }
+  .hero-content-title:hover{
+   letter-spacing: 2.5rem;
+  }
+  .hero-content-description{
+    font-size:2rem ;
+    transition: word-spacing 0.3s ease;
+  }
+  .hero-content-description:hover{
+    word-spacing: -0.2rem;
+  }
+  /*Hero-section-ended*/
+
+  /* service-section start*/
+  .servicesection{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px 40px;
+    padding: 5rem;
+    flex-wrap: wrap;
+  }
+  .service-card{
+    display:flex;
+    
+    border-radius: 12px;
+    padding: 20px;
+    min-width: 45%;
+    height: 180px;
+    transition: transform 0.3s ease;
+    
+
+  }
+  .service-card-content{
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+  }
+  .service>img{
+    min-height: 100%;
+    object-fit: contain;
+  }
+  .service-card:hover{
+    transform: scale(1.08);
+  }
+  .service-card-student-buddy{
+    background-color: #c361ff;
+  }
+  .service-card-promise-keeper{
+    background-color: #ffa084;
+  }
+  .service-card-done-with-a-heart{
+    background-color: #ffc556;
+
+  }
+  .service-card-study-partner{
+    background-color: #ff6b69;
+  }
+
+  
+  /* team section start*/
+  
+  .team{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 4rem;
+    padding-top: 8rem;
+  }
+  .card{
+    
+    
+   height: 100%;
+   width: 100%;
+   border-bottom: 2pxs solid #ffa084 ;
+   margin:20px;
+   
+
+  }
+  .card-container
+  {
+    position: relative;
+
+  }
+  .card-content{
+    position: absolute;
+    right: 50px;
+    /*background-color: #ffa084;*/
+    z-index: 3;
+    
+   
+
+
+  }
+ .card-container:hover{
+  transform: scaley(1.1);
+ }
+ /* FOOTER*/
+ footer{
+  text-align: center;
+  width: 100%;
+  padding: 25px;
+  font-size: 1rem;
+  color: var(--secondary-color);
+  font-family: var(--secondary-font-family);
+  word-spacing: 1rem;
+ }
+
+
+ /* MEDIA QUERIES*/
+ @media screen and (max-width:768px){
+  .hide-mobile{
+    display: none;
+  }
+  .header{
+    padding: 10px;
+
+  }
+  .hero-image{
+    width: 80%;
+    margin-right: 0;
+  }
+ }
+  
+ 
